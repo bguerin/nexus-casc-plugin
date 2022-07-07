@@ -60,13 +60,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
-        <snakeyaml.version>1.28</snakeyaml.version>
+        <snakeyaml.version>1.30</snakeyaml.version>
         <junit.version>5.8.2</junit.version>
         <testcontainers.version>1.17.3</testcontainers.version>
-        <fasterxml.version>2.13.2.1</fasterxml.version>
+        <fasterxml.version>2.13.3</fasterxml.version>
         <retrofit.version>2.9.0</retrofit.version>
         <allure.version>2.18.1</allure.version>
-        <aspectj.version>1.9.6</aspectj.version>
+        <aspectj.version>1.9.9.1</aspectj.version>
     </properties>
 
     <dependencyManagement>
@@ -439,7 +439,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.3.2</version>
+                        <version>3.4.0</version>
                         <configuration>
                             <failOnError>false</failOnError>
                         </configuration>
@@ -465,7 +465,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
+                        <version>3.0.1</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -485,7 +485,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.8</version>
+                        <version>1.6.13</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>ossrh</serverId>
