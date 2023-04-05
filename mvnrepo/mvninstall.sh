@@ -7,7 +7,7 @@ if [ "${1:-}" = "--clean" ]; then
     shift;
 fi
 
-VER="${1:-3.50.0-01}"
+VER="${1:-3.51.0-01}"
 
 declare -a REQUIRED_DEPS
 REQUIRED_DEPS[0]="com.sonatype.nexus:nexus-licensing-extension"
@@ -42,7 +42,7 @@ installFile() {
     fi
 
     artifact=$(echo -n "${artifact}" | tr '[:upper:]' '[:lower:]');
-    mvn install:install-file -DgeneratePom=true -DgroupId="${group}" -DartifactId="${artifact}" -Dversion="${version}" \
+    mvn -q install:install-file -DgeneratePom=true -DgroupId="${group}" -DartifactId="${artifact}" -Dversion="${version}" \
                           ${opts} -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath="${BASE_DIR}";
 }
 
