@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jul 06 14:05:08 CEST 2023
+nexus-ldap-plugin-3.57.0-01.jar>=
+nexus-ldap-plugin-3.57.0-01.pom>=
