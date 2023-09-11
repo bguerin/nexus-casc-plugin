@@ -21,6 +21,7 @@ public class IqConnectionVO {
     public boolean useTrustStoreForUrl;
     public Integer timeoutSeconds;
     public String properties;
+    public boolean failOpenModeEnabled;
 
     public Map<String,String> parseProperties() {
         final Map<String, String> result = new TreeMap<>();

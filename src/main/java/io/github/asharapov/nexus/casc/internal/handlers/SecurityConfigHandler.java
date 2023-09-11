@@ -501,11 +501,10 @@ public class SecurityConfigHandler {
 
     private List<SecurityConfig.Realm> getRealms() {
         final List<SecurityConfig.Realm> result = new ArrayList<>();
-        final List<String> enabledRealms = realmManager.getConfiguration().getRealmNames();
         for (SecurityRealm realm : realmManager.getAvailableRealms()) {
             final SecurityConfig.Realm model = new SecurityConfig.Realm();
             model.name = realm.getId();
-            model.enabled = enabledRealms.contains(model.name);
+            model.enabled = realmManager.isRealmEnabled(model.name);
             result.add(model);
         }
         return result;
