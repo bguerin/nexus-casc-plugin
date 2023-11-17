@@ -7,7 +7,7 @@ if [ "${1:-}" = "--clean" ]; then
     shift;
 fi
 
-VER="${1:-3.61.0-02}"
+VER="${1:-3.62.0-01}"
 
 declare -a REQUIRED_DEPS
 REQUIRED_DEPS[0]="com.sonatype.nexus:nexus-licensing-extension"
