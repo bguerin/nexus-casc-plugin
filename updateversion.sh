@@ -3,7 +3,7 @@ set -ueo pipefail;
 
 newversion=
 while [ "${newversion}" = "" ]; do
-    read -p "What is the new Nexus OSS version (example: 3.68.1-02) ? " newversion
+    read -p "What is the new Nexus OSS version (example: 3.69.0-02) ? " newversion
 done
 
 oldversion=$(grep '<nexus.pkg.version>[0-9]' pom.xml|sed -e 's/ //g' -e 's/<\(\/\)\?nexus.pkg.version>//g')

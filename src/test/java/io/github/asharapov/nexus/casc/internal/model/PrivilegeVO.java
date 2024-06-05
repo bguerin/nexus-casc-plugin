@@ -4,7 +4,7 @@ import java.util.List;
 
 public class PrivilegeVO {
     public enum Action {
-        READ, BROWSE, EDIT, ADD, DELETE, RUN, ASSOCIATE, DISASSOCIATE, ALL
+        READ, BROWSE, EDIT, ADD, DELETE, RUN, ASSOCIATE, DISASSOCIATE, ALL, START, STOP
     }
     public String type;
     public String name;
