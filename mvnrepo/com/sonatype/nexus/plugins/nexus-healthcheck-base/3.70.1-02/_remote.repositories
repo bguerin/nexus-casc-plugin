@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jul 18 08:42:47 CEST 2024
+nexus-healthcheck-base-3.70.1-02.jar>=
+nexus-healthcheck-base-3.70.1-02.pom>=
